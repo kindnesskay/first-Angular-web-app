@@ -8,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  
+  
+  handlelick(){
+  const menu=document.getElementById("menu")
+  menu?.classList.toggle('menu-bar')
+  menu?.classList.toggle('hide-menu')
 
+  const blur=document.getElementById("blur-bg")
+  blur?.classList.toggle("no-blur")
+  blur?.classList.toggle("blur")
+  
+  
+  
+}
 }
