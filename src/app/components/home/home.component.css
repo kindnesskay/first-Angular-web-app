@@ -1,13 +1,20 @@
 section {
+  position: relative;
   display: flex;
   gap: 20px;
   width: 100%;
+  padding-top: 80px;
+}
+.blur{
+display: none;
 }
 .main-content {
   padding-top: 15%;
   width: 100%;
   max-width: 600px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .head {
   padding-top: 20px;
@@ -56,9 +63,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-top: 60px;
-  
-  
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 .images .images-top{
   height: 65%;
@@ -112,10 +119,27 @@ max-height: 500px;
     flex-direction: column;
     width: 100%;
   }
+  .blur{
+    display: block;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .no-blur{
+    transition: all 0.5s;
+    backdrop-filter: none;
+    display: none;
+  }
+
   
 }
 @media screen and (min-width: 600px){
   .images .images-top{
     flex-direction: row;
   }
+  
 }
