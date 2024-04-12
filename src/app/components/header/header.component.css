@@ -27,8 +27,7 @@ nav {
 }
 .menu {
   height: 100%;
-  width: auto;
-  max-width: 60px;
+  width: 60px;
   display: none;
 }
 .menu-image {
